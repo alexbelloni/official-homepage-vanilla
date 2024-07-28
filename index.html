@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Alexandre Alves Official Homepage">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" href="./assets/fav.png">
+    <title>Alexandre Alves</title>
+</head>
+
+<body>
+    <header>
+        <div id="hero">
+            <div id="hero-text">
+                <span class="hero-text-item title">Alexandre Alves</span>
+                <span class="hero-text-item subtitle">Web Developer in Canada</span>
+                <div id="social-medias" class="hero-text-item">
+                    <a href="https://www.linkedin.com/in/alexandrealvestoca/" target="_blank" rel="noreferrer"><i
+                            class="fab fa-linkedin"></i></a><span> | </span>
+                    <a href="https://github.com/alexbelloni/" target="_blank" rel="noreferrer"><i
+                            class="fab fa-github"></i></a><span> | </span>
+                    <a href="https://www.npmjs.com/~alexalves/" target="_blank" rel="noreferrer"><i
+                            class="fab fa-npm"></i></a><span> | </span>
+                    <a href="https://twitter.com/xbelloni/" target="_blank" rel="noreferrer"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <span id="portfolio-tag">portfolio</span>
+        <div style="display: flex; justify-content: space-between;">
+            <div id="projects" style="margin-right: 10px;">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="foot">
+            <div id="social-medias" class="hero-text-item">
+                <a href="https://www.linkedin.com/in/alexandrealvestoca/" target="_blank" rel="noreferrer"><i
+                        class="fab fa-linkedin"></i></a><span> | </span>
+                <a href="https://github.com/alexbelloni/" target="_blank" rel="noreferrer"><i
+                        class="fab fa-github"></i></a><span> | </span>
+                <a href="https://www.npmjs.com/~alexalves/" target="_blank" rel="noreferrer"><i
+                        class="fab fa-npm"></i></a><span> | </span>
+                <a href="https://twitter.com/xbelloni/" target="_blank" rel="noreferrer"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+            <span class="title">Alexandre Alves</span>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script>
+        window.onload = () => {
+            getProjectCollection().
+                sort((a, b) => a.order - b.order).
+                forEach((p,i) => {
+                    const x = document.createElement("div")
+                    x.classList.add(["project"])
+                    x.innerHTML = `                
+                    <div>
+                        <a href="${p.url}" target="blank">
+                            <div size="230" class="sc-fFSPTT iFtzup">
+                                <img size="230"
+                                    src="${p.banner}"
+                                    class="sc-bkbkJK gChZgf">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <p>${p.synopsis}</p>
+                        <div class="sc-iemWCZ hKymwP"><a href="${p.url}" target="blank">go to <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div style="text-transform: uppercase;"><a href="${p.url}"
+                                target="blank">${p.title}</a></div>
+                    </div>
+                         
+                `
+                document.getElementById("projects").appendChild(x)
+
+                if(i%2 === 1) {
+                    const r = document.createElement("hr")
+                    r.style.width = "100%";
+                    r.style.fontWeight = "600";
+                    r.style.margin = "10px 0"
+                    document.getElementById("projects").appendChild(r)
+                }
+
+                })
+        }
+    </script>
+</body>
+
+</html>
