@@ -17,7 +17,7 @@
     <header>
         <div id="hero">
             <div id="hero-text">
-                <span class="hero-text-item title">Alexandre Alves</span>
+                <h1 class="hero-text-item title">Alexandre Alves</h1>
                 <span class="hero-text-item subtitle">Web Developer in Canada</span>
                 <div id="social-medias" class="hero-text-item">
                     <a href="https://www.linkedin.com/in/alexandrealvestoca/" target="_blank" rel="noreferrer"><i
@@ -30,15 +30,12 @@
                             class="fab fa-twitter"></i></a>
                 </div>
             </div>
-
         </div>
     </header>
     <main>
-        <span id="portfolio-tag">portfolio</span>
-        <div style="display: flex; justify-content: space-between;">
-            <div id="projects" style="margin-right: 10px;">
+        <h2>Here are some of my projects</h2>
+        <div id="projects">
 
-            </div>
         </div>
     </main>
     <footer>
@@ -61,7 +58,7 @@
         window.onload = () => {
             getProjectCollection().
                 sort((a, b) => a.order - b.order).
-                forEach((p,i) => {
+                forEach((p, i) => {
                     const x = document.createElement("div")
                     x.classList.add(["project"])
                     x.innerHTML = `                
@@ -86,15 +83,14 @@
                     </div>
                          
                 `
-                document.getElementById("projects").appendChild(x)
+                    document.getElementById("projects").appendChild(x)
 
-                if(i%2 === 1) {
-                    const r = document.createElement("hr")
-                    r.style.width = "100%";
-                    r.style.fontWeight = "600";
-                    r.style.margin = "10px 0"
-                    document.getElementById("projects").appendChild(r)
-                }
+                    if (i % 2 === 1) {
+                        const r = document.createElement("hr")
+                        r.style.width = "100%";
+                        r.style.fontWeight = "600";
+                        document.getElementById("projects").appendChild(r)
+                    }
 
                 })
         }
