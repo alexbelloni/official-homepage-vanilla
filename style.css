@@ -1,7 +1,6 @@
 :root {
     --dark-color: #111;
     --light-color: #5e5e5e;
-    /* --primary: #fedb65; */
     --primary: #7d9fda;
     --secondary: #eee;
     --brown: #353116;
@@ -93,9 +92,7 @@ main {
 
     .project {
         min-width: 100%;
-        border:dashed;
     }
-
 }
 
 .project {
