@@ -61,20 +61,19 @@
                 sort((a, b) => a.order - b.order).
                 forEach((p, i) => {
                     const x = document.createElement("div")
-                    x.classList.add(["project"])
+                    x.classList.add("project")
                     x.innerHTML = `                
                     <div>
                         <a href="${p.url}" target="blank">
-                            <div size="230" class="sc-fFSPTT iFtzup">
+                            <div size="230">
                                 <img size="230"
-                                    src="${p.banner}"
-                                    class="sc-bkbkJK gChZgf">
+                                    src="${p.banner}">
                             </div>
                         </a>
                     </div>
                     <div class="content">
                         <p>${p.synopsis}</p>
-                        <div class="sc-iemWCZ hKymwP"><a href="${p.url}" target="blank">go to <i
+                        <div><a href="${p.url}" target="blank">go to <i
                                     class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
@@ -82,7 +81,6 @@
                         <div style="text-transform: uppercase;"><a href="${p.url}"
                                 target="blank">${p.title}</a></div>
                     </div>
-                         
                 `
                     document.getElementById("projects").appendChild(x)
 

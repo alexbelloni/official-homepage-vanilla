@@ -32,7 +32,7 @@ function getProjectCollection() {
         },
         {
             title: "Onde Tem Vacina", banner: "https://res.cloudinary.com/dnzozanco/image/upload/v1622931879/homepage/ondetemvacina_i3urou.png",
-            url: "https://ondetemvacina.com/", hashtags: ["portfolio", "REACT", "blog"],
+            url: "https://otv.azurewebsites.net/", hashtags: ["portfolio", "REACT", "blog"],
             synopsis: "Free collaborative platform that offers a search tool for COVID vaccination places, and allows the population to participate in the process, reporting in real time the situation of the vaccination process in their city. It is my professional contribution as a front-end developer.",
             order: 0,
             postId: "ondetemvacina"
