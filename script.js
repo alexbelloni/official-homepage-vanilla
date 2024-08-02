@@ -32,24 +32,16 @@ function getProjectCollection() {
         },
         {
             title: "Onde Tem Vacina", banner: "https://res.cloudinary.com/dnzozanco/image/upload/v1622931879/homepage/ondetemvacina_i3urou.png",
-            url: "https://otv.azurewebsites.net/", hashtags: ["portfolio", "REACT", "blog"],
+            url: "https://github.com/alexbelloni/ondetemvacina", hashtags: ["portfolio", "REACT", "blog"],
             synopsis: "Free collaborative platform that offers a search tool for COVID vaccination places, and allows the population to participate in the process, reporting in real time the situation of the vaccination process in their city. It is my professional contribution as a front-end developer.",
-            order: 0,
-            postId: "ondetemvacina"
+            order: 0
         },
         {
             title: "Eat Sleep Ride GPS", banner: "https://res.cloudinary.com/dnzozanco/image/upload/v1622932994/homepage/esr_pro9pn.png",
             url: "https://eatsleepride.com/", hashtags: ["portfolio", "REACT", "REDUX"],
             synopsis: "New breed of motorcycle community, which combining the best of today's social web with useful features tailored to motorcycle enthusiasts of all types. It was my professional contribution as a front-end developer for this Canadian startup at DMZ.",
-            order: 1,
+            order: 1
         },
-        // {
-        //     title: "Social Media Press", banner: "https://res.cloudinary.com/dnzozanco/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1654707675/homepage/posts/blog_post_1_jqp9kz.jpg",
-        //     hashtags: ["portfolio", "blog"],
-        //     synopsis: "Collection with some of my external social media posts and articles on the Internet.",
-        //     order: 100,
-        //     postId: "socialmediapress"
-        // },
         {
             title: "Countrix", banner: "https://res.cloudinary.com/dnzozanco/image/upload/ar_1:1,c_fill,g_auto,w_1000/v1654783531/homepage/posts/countrix_yb1yni.jpg",
             url: "https://countrix.netlify.app/", hashtags: ["portfolio", "REACT", "accessibility", "Styled-Components"],
