@@ -32,7 +32,7 @@ function getProjectCollection() {
         },
         {
             title: "Ondetemvacina", banner: "https://res.cloudinary.com/dnzozanco/image/upload/v1622931879/homepage/ondetemvacina_i3urou.png",
-            url: "https://github.com/alexbelloni/ondetemvacina/blob/18104d553e40055020db3ecb3ec950903d235e3f/README.md", hashtags: ["portfolio", "REACT", "blog"],
+            url: "https://github.com/alexbelloni/ondetemvacina/", hashtags: ["portfolio", "REACT", "blog"],
             synopsis: "A free collaborative platform mapping COVID vaccination sites and real-time reporting on vaccination progress for Brazilian citizens, developed by our team and me as a front-end developer.",
             order: 0
         },
