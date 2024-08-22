@@ -30,8 +30,37 @@ header {
     background-color: var(--blue);
 
 }
+.links{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.job-platforms{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 5px;
+}
 
+.job-platform{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
 
+.job-platform a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+}
+
+.job-platform span{
+    margin-left: 4px;
+}
 
 #hero {
     position: absolute;
@@ -74,7 +103,7 @@ header {
 }
 
 main {
-    padding: 30px 0;
+    padding: 0 0 30px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
